@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "dev"
+name = "blue_crab_os"
 version = "0.1.0"
