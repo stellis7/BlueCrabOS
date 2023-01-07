@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/mnt/c/Users/JohnPC/Documents/GitHub/BlueCrabOS/BlueCrabOS/kernel/Cargo.toml
+cargo:rustc-link-search=native=/mnt/c/Users/JohnPC/Documents/GitHub/BlueCrabOS/BlueCrabOS/kernel/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-88371ebe0707341d/out
+cargo:rustc-link-lib=static=kernel_bin-blue_crab_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/mnt/c/Users/JohnPC/Documents/GitHub/BlueCrabOS/BlueCrabOS/kernel/target/x86_64-blue_crab_os/debug/blue_crab_os
+cargo:rerun-if-changed=build.rs
