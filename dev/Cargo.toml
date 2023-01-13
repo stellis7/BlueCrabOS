@@ -1,4 +1,13 @@
 [package]
-name = "blue_crab_os"
+name = "bc_os"
 version = "0.1.0"
 authors = ["Nick Battista bigboi@dillydinkers.com"]
+edition = "2021"
+
+[dependencies]
+bootloader = "0.9.23"
+volatile = "0.2.6" #possibly change this once we make it our own!
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]

@@ -1,0 +1,1 @@
+C:\Users\halod\Documents\GitHub\BlueCrabOS\dev\target\x86_64-bc_os\debug\bc_os: C:\Users\halod\Documents\GitHub\BlueCrabOS\dev\src\main.rs
