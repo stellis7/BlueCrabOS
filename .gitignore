@@ -1,4 +1,5 @@
-/target
-**/*.rs.bk
+kernel/target
+kernel/**/*.rs.bk
 
 .vscode
+doc/.obsidian
