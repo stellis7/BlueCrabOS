@@ -1,0 +1,5 @@
+kernel/target
+kernel/**/*.rs.bk
+
+.vscode
+doc/.obsidian
