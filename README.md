@@ -23,3 +23,4 @@ The purpose of this project is mainly to act as a personal project to further ou
 - To run the tests, invoke `cargo test`
 # Progress
 - Followed the tutorial for how to create a Rust bare metal OS, sitting in the dev branch
+- Notes of followed posts in `doc/` directory
