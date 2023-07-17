@@ -277,6 +277,7 @@ runner = "bootimage runner"
 - To print a character to the screen in VGA text mode, one has to write it to the text buffer of the VGA hardware
 - Two-dimensional array with typically 25 rows and 80 columns
 - Each array entry describes a single screen character with the following format
+<br/>
 | foo | bar |
 | --- | --- |
 | baz | bim |
