@@ -10,8 +10,6 @@ use core::panic::PanicInfo;
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
     println!("Hello World{}", "!");
-    #[cfg(not(test))]
-    panic!("SOMEONE CALL 911, SHAWTY FIRE BURNING ON THE DANCE FLO', WHOOOAAA OOHHH OOHHH");
     #[cfg(test)]
     test_main();
 
