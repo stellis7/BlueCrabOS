@@ -41,7 +41,12 @@ rustup component add llvm-tools-preview
 - This will also build, so no need to first build the project
 - Make sure to be in the `kernel/` directory in order to be able to run the rust commands for building and running
 - In order to get a basic window, you can do `cargo run`
-- To run the tests, invoke `cargo test`
+## Testing
+- To run all tests, invoke `cargo test`
+- To run a specific test, use the `--test` option, like `cargo test --test [name of test]`
+- Current tests to try:
+    - `basic_boot`
+    - `should_panic`
 # Progress
 - Followed the tutorial for how to create a Rust bare metal OS, sitting in the dev branch
 - Notes on followed posts and Rust in `doc/` directory
