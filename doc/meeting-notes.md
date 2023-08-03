@@ -38,3 +38,38 @@
         - Have two people work on implementing different synchronization primitives (spinlocks, mutex, semaphores)
         - Have the other three research and implement hardware interrupts
     - Hope to have some form of hardware interrupts and synchronization primitives by end of summer so we can tackle thread scheduling
+# August 2nd, 2023
+## Notes
+- Seth did his assignment for reading the posts
+- Teams decided:
+    - John sits on both
+    - Hardware Interrupts:
+        - Seth
+        - Joe
+    - Synchronization primitives:
+        - Nick
+        - Michael
+- Big ideas:
+    - Built-in remote feature
+        - Can run programs from server farms or locally
+    - How to make UIs different
+    - Be able to switch between graphical and just terminal
+    - Implement Warp maybe?
+    - Multi-sessions, where you could have multiple on the same computer
+    - Maybe daisey chain resources from multiple devices with this OS
+    - Focus alot on security
+## Todos
+- **SYNCH TEAM**:
+    - Look into Async/Await blog post here: [Async/Await](https://os.phil-opp.com/async-await/)
+    - Repo of spinlock we used in the [vga-buffer](barebones-notes/vga-buffer.md/###spinlocks) post: [spin-rs](https://github.com/mvdnes/spin-rs)
+    - Repo from the rust-os dev: [spinning-top](https://github.com/rust-osdev/spinning_top)
+    - Will meet on _ @ _
+- **INTERRUPTS TEAM**: 
+    - Read up on interrupts post (Seth already ahead!!!)
+    - Will meet on Tuesdays @ 2100
+- **JOHN**:
+    - Sit on both meetings
+    - Write email update to Lawrence:
+        - Give him an update of how far we've gotten
+        - Give him our github
+        - Ask him if he recommends focusing on a microkernel structure

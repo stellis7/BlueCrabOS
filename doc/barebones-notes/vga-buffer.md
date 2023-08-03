@@ -298,7 +298,7 @@ lazy_static! {
 [dependencies]
 spin = "0.5.2"
 ```
-- We then can use the spinning mutex tp add safe interior mutability to our static WRITER:
+- We then can use the spinning mutex to add safe interior mutability to our static WRITER:
 ```rust
 use spin::Mutex;
 ...
