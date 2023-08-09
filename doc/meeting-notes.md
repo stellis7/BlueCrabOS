@@ -63,7 +63,7 @@
     - Look into Async/Await blog post here: [Async/Await](https://os.phil-opp.com/async-await/)
     - Repo of spinlock we used in the [vga-buffer](barebones-notes/vga-buffer.md/###spinlocks) post: [spin-rs](https://github.com/mvdnes/spin-rs)
     - Repo from the rust-os dev: [spinning-top](https://github.com/rust-osdev/spinning_top)
-    - Will meet on _ @ _
+    - Will meet on Mondays @ 1730
 - **INTERRUPTS TEAM**: 
     - Read up on interrupts post (Seth already ahead!!!)
     - Will meet on Tuesdays @ 2100
@@ -73,3 +73,8 @@
         - Give him an update of how far we've gotten
         - Give him our github
         - Ask him if he recommends focusing on a microkernel structure
+# August 9th, 2023
+## Notes
+- John finished CPU exceptions
+    - Only difference is that interrupt test in main.rs instead of interrupts.rs
+## Todos
