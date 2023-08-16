@@ -15,9 +15,11 @@ edition = "2021"
 [dependencies]
 bootloader = "0.9.23"
 volatile = "0.2.6"
-spin = "0.5.2"
+spin = "0.9.8"
+spinning_top = "0.2.5"
 x86_64 = "0.14.2"
 uart_16550 = "0.2.0"
+lock_api = "0.4.10"
 
 [dependencies.lazy_static]
 version = "1.0"
