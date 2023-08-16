@@ -4,7 +4,6 @@
 #![test_runner(blue_crab_os::test_runner)]
 #![reexport_test_harness_main = "test_main"]
 
-use blue_crab_os::println;
 use core::panic::PanicInfo;
 use spinning_top::Spinlock;
 
@@ -22,21 +21,39 @@ fn panic(info: &PanicInfo) -> ! {
 
 #[test_case]
 fn spinning_top_spinlock_test() {    
-    let data = String::from("Hello"); // Make string
+    let data = 3;
+    // Wrap some data in a spinlock
+    let spinlock = Spinlock::new(data);
+
+    // Lock the spinlock to get a mutex guard for the data
+    let mut locked_data = spinlock.lock();
+    
+    assert_eq!(*locked_data, 3);
+    *locked_data += 7;
+    assert_eq!(*locked_data, 10);
+
+    // the guard automatically frees the lock at the end of the scope
+}
+
+#[test_case]
+fn spinning_top_spinlock_test_multi_function() {    
+    let data = 2; // Make string
     let spinlock = Spinlock::new(data); // Wrap string in spinlock
-    make_uppercase(&spinlock); // only pass a shared reference
+    plus_one(&spinlock); // only pass a shared reference
     // We have ownership of the spinlock, so we can extract the data without locking
     // Note: this consumes the spinlock
     let data = spinlock.into_inner();
-    assert_eq!(data.as_str(), "HELLO");
+    assert_eq!(data, 3);
+
+    // the guard automatically frees the lock at the end of the scope
 }
 
 // function will try to make data uppercase
-fn make_uppercase(spinlock: &Spinlock<String>) {
+fn plus_one(spinlock: &Spinlock<i64>) {
     // Lock the spinlock to get a mutable reference to the data
     let mut locked_data = spinlock.lock();
-    assert_eq!(locked_data.as_str(), "Hello");
-    locked_data.make_ascii_uppercase();
+    assert_eq!(*locked_data, 2);
+    *locked_data = 3;
 
     // the lock is automatically freed at the end of the scope
 }
