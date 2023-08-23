@@ -77,4 +77,8 @@
 ## Notes
 - John finished CPU exceptions
     - Only difference is that interrupt test in main.rs instead of interrupts.rs
+- Nick and Mike are working on testing the "spinning-lock" and "spin-rs" crates
 ## Todos
+- Double Faults (Joe and Seth)
+- Test spinning-lock and spin-rs (Mike and Nick)
+- Need to write email to Lawrence (John)
