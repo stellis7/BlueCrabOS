@@ -82,3 +82,14 @@
 - Double Faults (Joe and Seth)
 - Test spinning-lock and spin-rs (Mike and Nick)
 - Need to write email to Lawrence (John)
+
+# August 23rd, 2023
+## Notes
+- John and (mainly) Seth worked on finishing double fault handling to avoid bootlooping
+- Nick has started testing the spinning-lock crate and has written a couple of working tests
+- Last meeting so need to decide next steps
+    - When do we meet again: Winter is a maybe, will play by ear based on capstone progress.
+    - What are our next goals: 
+## Todos
+- Still need to send email
+- Remember our progress from when we start again
