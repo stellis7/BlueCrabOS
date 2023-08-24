@@ -93,3 +93,10 @@
 ## Todos
 - Still need to send email
 - Remember our progress from when we start again
+- Need to finish notes for double fault
+- Next thing for interrupts is actual hardware interrupts
+- Next thing for locking mechanisms is testing:
+    - create tests for spin-rs library (spinlocks, mutexes, all the locks basically)
+    - test spinning_top try to edit spinlock data when locked by another thread (figure out how to test multiple threads at once)
+    - test to see if data in spinlock can be edited when not locked in the first place (should be fine, nice to double check)
+    - test multiple data types inside of spinlock to make sure it works regardless of type (might be hard for String which comes from std which we don't have)
