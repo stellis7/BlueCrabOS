@@ -1,3 +1,4 @@
 target
 .vscode
 doc/.obsidian
+Cargo.lock
