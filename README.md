@@ -8,7 +8,7 @@ Our OS requires the use of the nightly release channel for Rust in order to use 
 - Nick Battista
 - Seth Ellis
 - Michael Gay
-- **John Hair**
+- ***John Hair***
 - Joe Lewis
 # How to compile the kernel
 ## Need to install
@@ -47,6 +47,9 @@ rustup component add llvm-tools-preview
 - Current tests to try:
     - `basic_boot`
     - `should_panic`
+    - `stack_overflow`
+    - `lock_test`
 # Progress
 - Followed the tutorial for how to create a Rust bare metal OS, sitting in the dev branch
+- Have support for cpu interrupts and double fault handling as well by following the aforementioned tutorial
 - Notes on followed posts and Rust in `doc/` directory

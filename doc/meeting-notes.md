@@ -82,3 +82,20 @@
 - Double Faults (Joe and Seth)
 - Test spinning-lock and spin-rs (Mike and Nick)
 - Need to write email to Lawrence (John)
+# August 23rd, 2023
+## Notes
+- John and (mainly) Seth worked on finishing double fault handling to avoid bootlooping
+- Nick has started testing the spinning-lock crate and has written a couple of working tests
+- Last meeting so need to decide next steps
+    - When do we meet again: Winter is a maybe, will play by ear based on capstone progress.
+    - What are our next goals:
+## Todos
+- Still need to send email
+- Remember our progress from when we start again
+- Need to finish notes for double fault
+- Next thing for interrupts is actual hardware interrupts
+- Next thing for locking mechanisms is testing:
+    - create tests for spin-rs library (spinlocks, mutexes, all the locks basically)
+    - test spinning_top try to edit spinlock data when locked by another thread (figure out how to test multiple threads at once)
+    - test to see if data in spinlock can be edited when not locked in the first place (should be fine, nice to double check)
+    - test multiple data types inside of spinlock to make sure it works regardless of type (might be hard for String which comes from std which we don't have)
