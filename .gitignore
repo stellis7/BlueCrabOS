@@ -1,5 +1,4 @@
-kernel/target
-kernel/**/*.rs.bk
-
+target
 .vscode
 doc/.obsidian
+Cargo.lock

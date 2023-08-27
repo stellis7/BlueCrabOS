@@ -10,9 +10,19 @@ use core::panic::PanicInfo;
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
     println!("Hello World{}", "!");
+
+    blue_crab_os::init();
+
+    // fn stack_overflow() {
+    //     stack_overflow(); // for each recursion, the return address is pushed
+    // }
+
+    // stack_overflow();
+
     #[cfg(test)]
     test_main();
 
+    println!("Did not crash!");
     loop {}
 }
 
@@ -31,6 +41,7 @@ fn panic(info: &PanicInfo) -> ! {
 }
 
 #[test_case]
-fn trivial_assertion() {
-    assert_eq!(1, 1);
+fn test_breakpoint_exception() {
+    // invoke a breakpoint exception
+    x86_64::instructions::interrupts::int3();
 }
